@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<div class="navbar-fixed">
+  <nav class="amber" role="navigation">
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/logo_3.svg"/>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#about">About</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#join">Join</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse">
+        <i class="material-icons">menu</i>
+      </a>
+    </div>
+  </nav>
+</div>
+<ul id="nav-mobile" class="side-nav">
+  <li><a href="#about">About</a></li>
+  <li><a href="#how-it-works">How it works</a></li>
+  <li><a href="#join">Join</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
+<!-- Photos -->
+<div class="carousel carousel-slider" data-indicators="true">
+  <div class="carousel-fixed-item center">
+    <a class="btn waves-effect white black-text">JOIN TODAY FOR 10% OFF YOUR FIRST ORDER</a>
+  </div>
+  {%
+    include photo.html
+    id="photo_1"
+    title="South Asian shopping, without the international flight."
+    subtitle="Our inventory includes modern pieces for any occasion, and budget."
+    position="73% top"
+  %}
+  {%
+    include photo.html
+    id="photo_2"
+    title="Handpicked designers, and quality you can count on."
+    subtitle="No more surprises as to whether your outfit actually resembles the picture."
+    position="top"
+  %}
+  {%
+    include photo.html
+    id="photo_4"
+    title="Handpicked designers, and quality you can count on."
+    subtitle="No more surprises as to whether your outfit actually resembles the picture."
+    position="9% top"
+  %}
+  {%
+    include photo.html
+    id="photo_3"
+    title="Secure checkout with Shopify &ndash; no more credit card scams."
+    subtitle="We believe women should feel safe purchasing from the comfort of their own home."
+    position="top"
+  %}
+</div>
+
+
+<!-- Footer -->
+<div class="section center">
+  Questions about our inventory? Interested in being a supplier?<br>
+  <h5>Please email <a href="mailto:hello@laado.co">hello@laado.co</a>!</h5>
+  <!-- <a target="_blank" href="terms.html">Terms</a> + <a target="_blank" href="privacy.html">Privacy</a> &copy; Flow -->
+</div>
