@@ -1,13 +1,23 @@
-h1, h2, h3, h4, h5, h6 {
-  font-family: Playfair Display, serif;
+html {
+  font-family: Raleway, sans-serif;
 }
 
-html {
-  font-family: 'Raleway', sans-serif;
+h4, h5 {
+  font-family: Playfair Display, serif;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 a {
-  color: #ffa000;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 nav .brand-logo img {
@@ -52,6 +62,29 @@ nav .brand-logo img {
   width: 100%;
 }
 
+.section {
+  padding: 32px 0;
+}
+
+.input-field label {
+ color: #000 !important;
+}
+
+.input-field input[type=text]:focus + label {
+ color: #000 !important;
+}
+
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus {
+ border-bottom: 1px solid #000 !important;
+ box-shadow: 0 1px 0 0 #000 !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .margin-bot-on-med-and-down {
+    margin-bottom: 24px;
+  }
+}
 
 @media only screen and (min-width: 601px) {
   nav .brand-logo img {

@@ -29,7 +29,7 @@ layout: default
 <!-- Photos -->
 <div class="carousel carousel-slider" data-indicators="true">
   <div class="carousel-fixed-item center">
-    <a class="btn waves-effect white black-text">JOIN TODAY FOR 10% OFF YOUR FIRST ORDER</a>
+    <a class="btn waves-effect white black-text">JOIN TODAY FOR $25 OFF</a>
   </div>
   {%
     include photo.html
@@ -47,24 +47,77 @@ layout: default
   %}
   {%
     include photo.html
-    id="photo_4"
-    title="Handpicked designers, and quality you can count on."
-    subtitle="No more surprises as to whether your outfit actually resembles the picture."
-    position="9% top"
-  %}
-  {%
-    include photo.html
     id="photo_3"
     title="Secure checkout with Shopify &ndash; no more credit card scams."
     subtitle="We believe women should feel safe purchasing from the comfort of their own home."
     position="top"
   %}
+  {%
+    include photo.html
+    id="photo_4"
+    title="ONLINE STORE COMING SOON"
+    subtitle="It's worth the wait."
+    position="9% top"
+  %}
+</div>
+
+<!-- About -->
+<div id="about" class="scrollspy section container">
+  <h4 class="amber-text text-darken-1">About</h4>
+  <div class="row">
+    <div class="col s12 l7 xl8 flow-text">
+      <b>Hi, my name is Neha.</b> A few months ago, I was trying to find a last-minute outfit for my brother's wedding and failing miserably. Every website I came across either had dated styles or horror stories for reviews. After agonizing for a week, I finally bit the bullet and bought a lehenga, never to hear from the retailer again. That's when I came up with the idea for Laado: South Asian fashion you can trust.
+    </div>
+    <img class="col l5 xl4 hide-on-med-and-down" src="assets/me.jpg"/>
+  </div>
+</div>
+
+<!-- How it works -->
+<div id="how-it-works" class="scrollspy section amber darken-2 white-text">
+  <div class="container">
+    <h4 class="white-text center">How it works</h4>
+    <div class="row">
+      {%
+        include number.html
+        number="1"
+        content="Purchase an item from our curated collection."
+      %}
+      {%
+        include number.html
+        number="2"
+        content="Receive it within two weeks, or shipping is on us."
+      %}
+      {%
+        include number.html
+        number="3"
+        content="Visit one of our trusted tailors for a flate rate!"
+      %}
+    </div>
+  </div>
+</div>
+
+<!-- Join -->
+<div id="join" class="scrollspy section container row">
+  <h4 class="amber-text text-darken-3 col s12 l5 xl4">For a limited time, join our priority list and receive $25 off your first order!</h4>
+  <form class="col s12 l7 xl8">
+    <div class="input-field col s6">
+      <input id="first_name" type="text" class="validate">
+      <label for="first_name">First Name</label>
+    </div>
+    <div class="input-field col s6">
+      <input id="last_name" type="text" class="validate">
+      <label for="last_name">Last Name</label>
+    </div>
+    <div class="input-field col s12">
+      <input id="email" type="email" class="validate">
+      <label for="email">Email</label>
+    </div>
+  </form>
 </div>
 
 
 <!-- Footer -->
-<div class="section center">
-  Questions about our inventory? Interested in being a supplier?<br>
+<div id="contact" class="scrollspy section center amber darken-4 white-text">
+  <h6>Questions about our inventory? Interested in being a supplier?</h6>
   <h5>Please email <a href="mailto:hello@laado.co">hello@laado.co</a>!</h5>
-  <!-- <a target="_blank" href="terms.html">Terms</a> + <a target="_blank" href="privacy.html">Privacy</a> &copy; Flow -->
 </div>
