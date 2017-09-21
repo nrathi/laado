@@ -19,7 +19,7 @@ a {
   color: #fff;
 }
 
-a:hover {
+#contact a:hover {
   text-decoration: underline;
 }
 
@@ -71,6 +71,10 @@ nav .brand-logo img {
 
 .section {
   padding: 32px 0;
+}
+
+input:focus {
+  outline: none;
 }
 
 .input-field label {
