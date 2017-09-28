@@ -15,11 +15,11 @@ h6 {
   margin: 0;
 }
 
-a {
+#contact a {
   color: #fff;
 }
 
-#contact a:hover {
+#contact a:hover, #blog a:hover {
   text-decoration: underline;
 }
 
@@ -88,6 +88,61 @@ input:focus {
 .input-field input:focus {
  border-bottom: 1px solid #000 !important;
  box-shadow: 0 1px 0 0 #000 !important;
+}
+
+.instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.images > .col > div {
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  height: 400px;
+}
+
+.images .suit {
+  background-image: url(/assets/suit.jpg);
+}
+
+.images .anarkali {
+  background-image: url(/assets/anarkali.jpg);
+}
+
+.images .lehenga {
+  background-image: url(/assets/lehenga.png);
+}
+
+.images .sari {
+  background-image: url(/assets/sari.jpg);
+}
+
+.images .kurta {
+  background-image: url(/assets/kurta.jpg);
+}
+
+.images .jodhpuri {
+  background-image: url(/assets/jodhpuri.jpg);
+}
+
+.images .nehru {
+  background-image: url(/assets/nehru.jpg);
+}
+
+.images .sherwani {
+  background-image: url(/assets/sherwani.jpg);
+}
+
+.images .translucent {
+  padding-bottom: 0;
 }
 
 @media only screen and (max-width: 992px) {
