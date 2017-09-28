@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<div class="navbar-fixed">
+  <nav class="amber" role="navigation">
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo center">
+        <img src="assets/logo.svg"/>
+      </a>
+      <ul class="left">
+        <li><a href="index.html"><i class="material-icons">arrow_back</i></a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div id="blog" class="section container">
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="#{{ post.identifier }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  {% for post in site.posts %}
+    <div id="{{ post.identifier }}" class="scrollspy">
+      <h5><div class="right">{{ post.date | date: "%m/%d/%Y" }}</div>{{ post.title }}</h5>
+      {{ post.excerpt }}
+    </div>
+  {% endfor %}
+</div>
+
+
