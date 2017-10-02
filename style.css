@@ -141,6 +141,22 @@ input:focus {
   background-image: url(/assets/sherwani.jpg);
 }
 
+.images .rm_adorne_1 {
+  background-image: url(/assets/rm_adorne_1.png);
+}
+
+.images .rm_adorne_2 {
+  background-image: url(/assets/rm_adorne_3.png);
+}
+
+.images .rm_mirabella_1 {
+  background-image: url(/assets/rm_mirabella_1.jpeg);
+}
+
+.images .rm_mirabella_2 {
+  background-image: url(/assets/rm_mirabella_2.jpeg);
+}
+
 .images .translucent {
   padding-bottom: 0;
 }

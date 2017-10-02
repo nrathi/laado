@@ -14,16 +14,19 @@ layout: default
   </nav>
 </div>
 
-<div id="blog" class="section container">
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <a href="#{{ post.identifier }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+<div id="blog" class="container">
+  <div class="section no-pad-bot">
+    <strong>Archive</strong>
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <a href="#{{ post.identifier }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
   {% for post in site.posts %}
-    <div id="{{ post.identifier }}" class="scrollspy">
+    <div id="{{ post.identifier }}" class="section no-pad-bot scrollspy">
       <h5><div class="right">{{ post.date | date: "%m/%d/%Y" }}</div>{{ post.title }}</h5>
       {{ post.excerpt }}
     </div>
